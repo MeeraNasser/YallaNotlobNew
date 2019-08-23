@@ -9,8 +9,4 @@ You need to install :
 Node js
 mongo DB
 express js
-Node Packages :
 
-
-twitter-node-client
-mongodb
