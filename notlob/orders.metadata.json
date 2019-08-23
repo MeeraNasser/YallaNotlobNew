@@ -1,0 +1,1 @@
+{"options":{"validator":{"$and":[{"ownerEmail":{"$type":"string"}},{"from":{"$type":"string"}},{"date":{"$type":"string"}},{"status":{"$type":"string"}}]}},"indexes":[{"v":1,"key":{"_id":1},"name":"_id_","ns":"notlob.orders"}]}

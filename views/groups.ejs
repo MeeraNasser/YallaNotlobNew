@@ -1,0 +1,92 @@
+<%include layout/header%>
+<!-- #Header Starts -->
+<script src="assets/libraries/jquery-3.1.1.js"></script>
+<script src="assets/libraries/socket.io.js"></script>
+<script src="assets/js/homeSocket.js"></script>
+
+<!-- //////////////////friends Page/////////////////////////// -->
+<div id="friends">
+    <!-- Slider Starts -->
+    <div class="banner">
+        <img src="assets/images/back.jpg" alt="banner" class="img-responsive">
+        <div class="caption">
+            <div class="caption-wrapper">
+                <div class="caption-info">
+
+                    <!-- add Group -->
+                    <div class="add">
+                      <label for="user" class="heading" style="margin-left: -359px;margin-bottom: -5px;">Your Group Name</label>
+                      <div>
+                        <input id="groupName" type="text" style="color:black" >
+                        <input id="addGroupBtn" type="submit" class="btn" value="Add Group" style="margin-right: 1101px;">
+                        <p id="addGroupError"></p>
+                      </div>
+                    </div>
+
+
+                  <div class="border-wrap">
+                    <div class="friendsListBorder">
+                      <h3 style="margin:10px">SD</h3>
+                      <!-- Meera -->
+                      <div class="add">
+                        <label for="user" class="heading" style="margin-left:-359px;margin-bottom: -5px;">Your Group Name</label>
+                        <div>
+                          <input id="user" class="AddF2G" type="text" style="color:black" >
+                          <input type="submit" id="AddF2G" class="btn" value="Add Friend" style="margin-top: -3px">
+                        </div>
+                      </div>
+                      <p id="addFriendToGroupError"></p>
+
+                      <div class="wrapper row3">
+                        <main class="hoc container clear" >
+                          <div class="sectiontitle">
+                          </div>
+                          <div class="group excerpts" id="groupMembersList">
+                            <article class="one_third first">
+                              <div class="hgroup">
+                                <h6 class="heading">Ahmed Alii</h6>
+                              </div>
+                              <img src="../assets/images/1.jpg" alt="">
+                              <footer><a class="btn" href="#">UnFriend &raquo;</a></footer>
+                            </article>
+                          </div>
+                          <div class="clear"></div>
+                        </main>
+                      </div>
+                    </div>
+                    <div class="myGroupsBorder">
+                      <h3 style="margin:10px">My Groups</h3>
+                      <ul class="myGroupsList" id="GroupsNameList">
+                        <%for(var i=0;i<myGroups.length;i++){%>
+                            <li class="myGroupsItem">
+                              <a style="margin:10px" class="heading" id="groupName"><%=myGroups[i]%></a>
+                                <div style="margin-left: 200px;margin-top: -28px;">
+                                <a><img src="../assets/images/addFriendIcon.png" style="width: 35px;height: 30px;"></a>
+                                <a class="removeG"><img src="../assets/images/remove.png" style="width: 35px;height: 30px;"></a>
+                                </div>
+                            </li>
+                        <%}%>
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!--....................................... jquery........................ -->
+    <script src="assets/libraries/jquery.js"></script>
+    <script src="assets/libraries/wow.min.js"></script>
+    <script src="assets/libraries/bootstrap.js" type="text/javascript" ></script>
+    <script src="assets/libraries/touchSwipe.min.js"></script>
+    <script src="assets/libraries/respond.js"></script>
+    <script src="assets/libraries/jquery.blueimp-gallery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="layout/scripts/jquery.min.js"></script>
+    <script src="layout/scripts/jquery.backtotop.js"></script>
+    <script src="layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>
